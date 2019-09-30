@@ -5,6 +5,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 const appVersion = new Date().getTime()
