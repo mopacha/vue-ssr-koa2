@@ -1,0 +1,25 @@
+{
+  "name": "vue-ssr-koa2",
+  "version": "1.0.0",
+  "description": "based on vue2 koa2 webpack4 for ssr render",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mopacha/vue-ssr-koa2.git"
+  },
+  "keywords": [
+    "vue",
+    "ssr",
+    "koa2",
+    "webpack4"
+  ],
+  "author": "moofyu@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mopacha/vue-ssr-koa2/issues"
+  },
+  "homepage": "https://github.com/mopacha/vue-ssr-koa2#readme"
+}
