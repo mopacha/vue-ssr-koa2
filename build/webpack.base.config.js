@@ -4,6 +4,7 @@ const ExtractCssChunks = require('extract-text-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 const appVersion = new Date().getTime()
@@ -42,7 +43,17 @@ if(isProd) {
 		new webpack.optimize.UglifyJsPlugin({
 			compress: { warnings: false }
 		}),
-		new webpack.optimize.ModuleConcatenationPlugin()
+		new webpack.optimize.ModuleConcatenationPlugin(),
+		new OptimizeCssAssetsPlugin(
+			{
+				cssProcessor: require('cssnano'),
+				cssProcessorOptions: {
+					// postcss那边已经处理过autoprefixer了，这里把它关掉，否则会导致浏览器前缀兼容范围问题
+					autoprefixer: false,
+					discardComments: { removeAll: true }
+				},
+			}
+		)
 	])
 } else {
 	plugins = plugins.concat([
