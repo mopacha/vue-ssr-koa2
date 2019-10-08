@@ -64,7 +64,9 @@ module.exports = function() {
 				 // js,jsx 转译
 				{
 					test: /\.(js|jsx)$/,
-					use: ['babel-loader'],
+					use:{
+						loader: 'babel-loader'
+					},
 					exclude: /node_modules/,
 				},
 				{
