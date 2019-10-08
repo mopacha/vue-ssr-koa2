@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractCssChunks = require('extract-text-webpack-plugin')
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
@@ -41,9 +41,7 @@ if(isProd) {
 		new webpack.optimize.MinChunkSizePlugin({
 			minChunkSize: 20000
 		}),
-		new webpack.optimize.UglifyJsPlugin({
-			compress: { warnings: false }
-		}),
+		
 		new webpack.optimize.ModuleConcatenationPlugin(),
 		new OptimizeCssAssetsPlugin(
 			{
@@ -63,6 +61,7 @@ if(isProd) {
 }
 
 module.exports = {
+	mode: process.env.NODE_ENV,
   devtool: isProd
     ? false
 		: '#cheap-module-source-map',
@@ -72,6 +71,8 @@ module.exports = {
 		path: resolve('dist'),
     // 生成的文件名, [name] 即为entry配置中的key
 		filename: '[name].[chunkhash:8].js',
+		// 异步模块文件名
+    chunkFilename: '[id].js',
 		publicPath: '/dist/'
 	},
   // 寻找模块时的一些缺省设置

@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 const CreateListView = (id) => () => import('@/pages/index/CreateListView').then(m => m.default(id))
 
+
 export default () => {
     const router = new VueRouter({
         mode: 'history',

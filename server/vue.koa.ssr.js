@@ -7,7 +7,7 @@ const LRU = require('lru-cache')
 const { createBundleRenderer } = require('vue-server-renderer')
 const isProd = process.env.NODE_ENV === 'production'
 const proxyConfig = require('./../app.config').proxy
-const setUpDevServer = require('./../build/setup-dev-server')
+const setUpDevServer = require('./../config/setup-dev-server')
 
 module.exports = function (app, uri) {
 
