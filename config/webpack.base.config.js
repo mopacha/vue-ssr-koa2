@@ -7,6 +7,8 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const BabelConfig = require('./babel.config')
+
 const appConfig = require('./../app.config')
 const isProd = process.env.NODE_ENV === 'production'
 // 版本号
@@ -65,7 +67,8 @@ module.exports = function() {
 				{
 					test: /\.(js|jsx)$/,
 					use:{
-						loader: 'babel-loader'
+						loader: 'babel-loader',
+						options: BabelConfig.get()
 					},
 					exclude: /node_modules/,
 				},
