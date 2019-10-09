@@ -28,7 +28,7 @@ module.exports = function() {
 			// 输出到这个目录下
 			path: resolve('dist'),
 			// 生成的文件名, [name] 即为entry配置中的key
-			filename: '[name].[chunkhash:8].js',
+		  filename: '[name].[chunkhash:8].js',
 			// 异步模块文件名
 			chunkFilename: '[id].js',
 			publicPath: '/dist/'

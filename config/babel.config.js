@@ -1,23 +1,18 @@
 exports.get = () => {
 	return {
 		presets: [
-			[
-				'@babel/preset-env',
-				{
-					modules: false
-				}
-			]
+			['@babel/preset-env']
 		],
 		plugins: [
-			['@babel/plugin-syntax-dynamic-import'],
-			['@babel/plugin-syntax-jsx'],
 			['transform-vue-jsx'],
+			['@babel/plugin-syntax-jsx'],
+			['@babel/plugin-syntax-dynamic-import'],
 			[
-				'component',
-				{
+				 'component',
+			  {
 					libraryName: 'element-ui',
 					styleLibraryName: 'theme-chalk'
-				}
+			  }
 			]
 		]
 	}
