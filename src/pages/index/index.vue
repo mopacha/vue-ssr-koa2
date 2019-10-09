@@ -29,9 +29,9 @@ export default {
   data() {
     return {}
   },
-  //asyncData({ store, router }) {
-  //  return store.dispatch('FETCH_INDEX_TAGS')
-  //},
+  asyncData({ store, router }) {
+    return store.dispatch('FETCH_INDEX_TAGS')
+  },
   computed: {
     tags() {
       return this.$store.state.app.indexTags

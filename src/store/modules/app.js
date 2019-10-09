@@ -24,7 +24,7 @@ const app = {
             state.indexTags = payload
         },
         SET_INDEX_LIST(state, { type, data }) {
-            state.indexList[type] = state.indexList[type].concat(data)
+            state.indexList[type] = data
         }
     },
     actions: {
