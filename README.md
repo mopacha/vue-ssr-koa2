@@ -1,6 +1,6 @@
-## Vue + Koa2 + Webpack4 + ElementUI 开发SSR项目
+## Vue+Vue-Router+Vuex+Webpack4+ElementUI+SSR 实战
 
-> 开发中......
+> moofy@163.com   开发中......
 
 ### 什么是服务器端渲染 (SSR)？为什么使用服务器端渲染 (SSR)？
  

@@ -52,7 +52,8 @@ module.exports = function (app, uri) {
       clientManifest
     })
   } else {
-    // dev mode
+		// dev mode
+		console.log("NODE_ENV:  development")
     setUpDevServer(app, uri, (bundle, options) => {
         try {
           renderer = createRenderer(bundle, options)
