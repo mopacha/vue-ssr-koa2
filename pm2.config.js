@@ -13,13 +13,12 @@ module.exports = {
     max_memory_restart: '1G', // 当内存超过1024M时自动重启
     watching: true,
     env: {
-      NODE_ENV: 'production'
+			NODE_ENV: 'production',
+			PORT: 8066
 		},
-		env_test: {
-      NODE_ENV: 'production'
-    },
     env_production: {
-      NODE_ENV: 'production'
+			NODE_ENV: 'production',
+			PORT: 8066
     }
   }],
 }

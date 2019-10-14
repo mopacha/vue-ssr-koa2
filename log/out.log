@@ -1,0 +1,77 @@
+2019-10-14 13:50 +08:00: 
+> Starting server... http://172.20.10.72:8066 
+
+2019-10-14 13:50 +08:00: 
+> Starting server... http://172.20.10.72:8066 
+
+2019-10-14 13:50 +08:00: 
+> Starting server... http://172.20.10.72:8066 
+
+2019-10-14 13:50 +08:00: 
+> Starting server... http://172.20.10.72:8066 
+
+2019-10-14 13:50 +08:00:   <-- GET /index/backend
+2019-10-14 13:50 +08:00: entry-server len 2
+2019-10-14 13:50 +08:00:   --> GET /index/backend 200 453ms 2.9kb
+2019-10-14 13:50 +08:00:   <-- GET /dist/app.24c1d3a0.css
+2019-10-14 13:50 +08:00:   <-- GET /dist/app.24c1d3a0.js
+2019-10-14 13:50 +08:00:   <-- GET /public/share.svg
+2019-10-14 13:50 +08:00:   --> GET /public/share.svg 200 3ms 418b
+2019-10-14 13:50 +08:00:   --> GET /dist/app.24c1d3a0.css 200 24ms 35.6kb
+2019-10-14 13:50 +08:00:   <-- GET /public/like.svg
+2019-10-14 13:50 +08:00:   --> GET /public/like.svg 200 3ms 692b
+2019-10-14 13:50 +08:00:   <-- GET /public/logo-98.png
+2019-10-14 13:50 +08:00:   --> GET /public/logo-98.png 200 2ms 1.89kb
+2019-10-14 13:50 +08:00:   <-- GET /public/comment.svg
+2019-10-14 13:50 +08:00:   <-- GET /public/collect.svg
+2019-10-14 13:50 +08:00:   --> GET /public/collect.svg 200 3ms 215b
+2019-10-14 13:50 +08:00:   --> GET /dist/app.24c1d3a0.js 200 69ms 198.06kb
+2019-10-14 13:50 +08:00:   --> GET /public/comment.svg 200 49ms 502b
+2019-10-14 13:50 +08:00:   <-- GET /favicon.ico
+2019-10-14 13:50 +08:00:   --> GET /favicon.ico 200 3ms 16.56kb
+2019-10-14 13:51 +08:00:   <-- GET /index/backend
+2019-10-14 13:51 +08:00: entry-server len 2
+2019-10-14 13:51 +08:00:   --> GET /index/backend 200 431ms 2.9kb
+2019-10-14 13:51 +08:00:   <-- GET /dist/app.24c1d3a0.css
+2019-10-14 13:51 +08:00:   <-- GET /public/logo-98.png
+2019-10-14 13:51 +08:00:   <-- GET /dist/app.24c1d3a0.js
+2019-10-14 13:51 +08:00:   --> GET /public/logo-98.png 200 9ms 1.89kb
+2019-10-14 13:51 +08:00:   --> GET /dist/app.24c1d3a0.css 200 20ms 35.6kb
+2019-10-14 13:51 +08:00:   <-- GET /public/collect.svg
+2019-10-14 13:51 +08:00:   --> GET /public/collect.svg 200 3ms 215b
+2019-10-14 13:51 +08:00:   <-- GET /public/comment.svg
+2019-10-14 13:51 +08:00:   <-- GET /public/like.svg
+2019-10-14 13:51 +08:00:   --> GET /public/comment.svg 200 3ms 502b
+2019-10-14 13:51 +08:00:   <-- GET /public/share.svg
+2019-10-14 13:51 +08:00:   --> GET /public/like.svg 200 9ms 692b
+2019-10-14 13:51 +08:00:   --> GET /public/share.svg 200 21ms 418b
+2019-10-14 13:51 +08:00:   --> GET /dist/app.24c1d3a0.js 200 75ms 198.06kb
+2019-10-14 13:51 +08:00:   <-- GET /favicon.ico
+2019-10-14 13:51 +08:00:   --> GET /favicon.ico 200 2ms 16.56kb
+2019-10-14 13:51 +08:00:   <-- GET /index/backend
+2019-10-14 13:51 +08:00: entry-server len 2
+2019-10-14 13:51 +08:00:   --> GET /index/backend 200 464ms 2.9kb
+2019-10-14 13:51 +08:00:   <-- GET /dist/app.24c1d3a0.css
+2019-10-14 13:51 +08:00:   <-- GET /dist/app.24c1d3a0.js
+2019-10-14 13:51 +08:00:   <-- GET /public/like.svg
+2019-10-14 13:51 +08:00:   <-- GET /public/logo-98.png
+2019-10-14 13:51 +08:00:   --> GET /public/like.svg 200 8ms 692b
+2019-10-14 13:51 +08:00:   <-- GET /public/comment.svg
+2019-10-14 13:51 +08:00:   --> GET /public/comment.svg 200 3ms 502b
+2019-10-14 13:51 +08:00:   --> GET /public/logo-98.png 200 10ms 1.89kb
+2019-10-14 13:51 +08:00:   --> GET /dist/app.24c1d3a0.css 200 34ms 35.6kb
+2019-10-14 13:51 +08:00:   <-- GET /public/share.svg
+2019-10-14 13:51 +08:00:   --> GET /public/share.svg 200 3ms 418b
+2019-10-14 13:51 +08:00:   <-- GET /public/collect.svg
+2019-10-14 13:51 +08:00:   --> GET /public/collect.svg 200 8ms 215b
+2019-10-14 13:51 +08:00:   --> GET /dist/app.24c1d3a0.js 200 70ms 198.06kb
+2019-10-14 13:51 +08:00:   <-- GET /favicon.ico
+2019-10-14 13:51 +08:00:   --> GET /favicon.ico 200 3ms 16.56kb
+2019-10-14 13:51 +08:00:   <-- GET /public/like.svg
+2019-10-14 13:51 +08:00:   --> GET /public/like.svg 200 3ms 692b
+2019-10-14 13:51 +08:00:   <-- GET /public/collect.svg
+2019-10-14 13:51 +08:00:   <-- GET /public/share.svg
+2019-10-14 13:51 +08:00:   --> GET /public/collect.svg 200 4ms 215b
+2019-10-14 13:51 +08:00:   --> GET /public/share.svg 200 4ms 418b
+2019-10-14 13:51 +08:00:   <-- GET /public/comment.svg
+2019-10-14 13:51 +08:00:   --> GET /public/comment.svg 200 4ms 502b
