@@ -1,8 +1,3 @@
-/**
- * Created by zdliuccit on 2017/9/22.
- * log模块，依赖winston
- */
-
 const winston = require('winston')
 
 module.exports = function (filename) {
