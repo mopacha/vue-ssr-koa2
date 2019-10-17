@@ -31,7 +31,8 @@ export default () => {
             },
 						{ path: '/books', component: () => import('@/pages/books/index.vue') },
 						{ path: '/test', component: () => import('@/components/test.vue') },
-            { path: '/about', component: () => import('@/components/about.vue') },
+						{ path: '/about', component: () => import('@/components/about.vue') },
+						{ path: '/tree', component: () => import('@/components/tree.vue') },
             { path: '*', redirect: '/index' }
         ]
     })
