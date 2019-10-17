@@ -126,8 +126,10 @@ export default {
       }
 
       var chart = new OrgChart(document.getElementById("tree"), {
+        template: 'ula',
+        mouseScrool: OrgChart.action.zoom,
         enableSearch: false,
-        mouseScrool: OrgChart.action.none,
+
         nodeMenu: {
           edit: { text: "编辑" },
           add: { text: "添加" },
@@ -153,25 +155,28 @@ export default {
 <style lang="stylus">
 .Tree {
   #editForm {
-    display: none
+    display: none;
+
     .el-dialog__header {
-      background: #039be5
-      padding: 15px 20px
+      background: #039be5;
+      padding: 15px 20px;
     }
+
     .el-dialog__body {
-      padding: 15px 20px 0 20px
+      padding: 15px 20px 0 20px;
     }
+
     .dialog-footer {
       button {
-        width: 100px
+        width: 100px;
       }
     }
   }
 
   #tree {
-    width: 100%
-    height: 900px !important
-    position: relative
+    width: 100%;
+    height: 900px !important;
+    position: relative;
   }
 }
 </style>
