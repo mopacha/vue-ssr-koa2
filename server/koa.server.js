@@ -48,4 +48,4 @@ app.on('error', (err) => {
   // console.error('Server error: \n%s\n%s ', err.stack || '')
 })
 
-app.listen(appConfig.appPort)
+app.listen(appConfig.appPort, '0.0.0.0')
