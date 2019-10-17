@@ -106,6 +106,14 @@ export default {
           node.robot = that.robotInput[0].value
 
           chart.updateNode(node)
+
+
+          console.log(obj)
+
+          //整个树的数据结构
+          console.log('整个树的数据结构')
+          console.log(obj.config.nodes)
+
           that.hide()
         })
 
