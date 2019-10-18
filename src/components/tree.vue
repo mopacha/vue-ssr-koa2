@@ -84,13 +84,28 @@ export default {
         value: '3',
         label: '机器人C'
       }],
+      treeData: [
+        { id: 1, version: '1', range: "范围2", robot: "机器人A" },
+        { id: 2, pid: 1, version: '2.1', range: "范围3", robot: "机器人B" },
+        { id: 3, pid: 1, version: '2.2', range: "范围1", robot: "机器人C" }
+      ]
     }
   },
   mounted() {
     this.initChart()
   },
   methods: {
+    alertMessage() {
+      this.$alert('请先删除子节点', '提示', {
+        confirmButtonText: '确定',
+        type: 'warning',
+        callback: action => {
+        }
+      });
+    },
     initChart() {
+
+      const _vthis = this
       let editForm = function () {
         this.nodeId = null
       }
@@ -161,11 +176,7 @@ export default {
           field_1: "range",
           field_2: "robot"
         },
-        nodes: [
-          { id: 1, version: '1', range: "范围2", robot: "机器人A" },
-          { id: 2, pid: 1, version: '2.1', range: "范围3", robot: "机器人B" },
-          { id: 3, pid: 1, version: '2.2', range: "范围1", robot: "机器人C" }
-        ]
+        nodes: this.treeData
       })
 
 
@@ -179,7 +190,6 @@ export default {
             return
           }
         })
-
         // 父节点有几个孩子
         let num = 1
         chart.config.nodes.map(i => {
@@ -188,12 +198,21 @@ export default {
             return
           }
         })
-
         node.version = parentVersion + '.' + num
-        // your code goes here 
-        // return false; to cancel the operation
-        return true;
+        return true
       })
+
+      chart.on('remove', function (sender, nodeId) {
+        let canRemove = true
+        chart.config.nodes.some(item => {
+          if (item.pid == nodeId) {
+            _vthis.alertMessage()
+            canRemove = false
+            return
+          }
+        })
+        return canRemove
+      });
     },
   }
 }
