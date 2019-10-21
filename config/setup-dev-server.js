@@ -53,7 +53,8 @@ module.exports = function setupDevServer(app, uri, cb) {
   app.use(convert(devMiddleware))
 
   // hot update
-  clientCompiler.plugin('done', stats => {
+  clientCompiler.hooks.done.tap('BuildStatsPlugin', stats => {
+	
     const fs = devMiddleware.fileSystem
     stats = stats.toJson()
     stats.errors.forEach(err => console.error(err))

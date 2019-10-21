@@ -242,7 +242,7 @@ export default {
 
   #tree {
     width: 100%;
-    height: 900px !important;
+    height: 700px !important;
     position: relative;
   }
 }
